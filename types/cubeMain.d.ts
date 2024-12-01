@@ -18,7 +18,8 @@ declare class ConnectyCube {
     videochatconference: import("./videocalling_conference/cubeConferenceClient");
     setSession(session: any): void;
     getSession(): Promise<any>;
-    createSession(params: any): Promise<any>;
+    // Made this param optional 
+    createSession(params?: any): Promise<any>;
     destroySession(): Promise<any>;
     createWebSession(params: any): Promise<any>;
     checkWebSessionUntilUpgrade(callback: any): NodeJS.Timeout;
